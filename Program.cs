@@ -35,7 +35,7 @@ namespace FortniteProjectCreator {
             {
                 ZipFile.ExtractToDirectory(Path.Combine(Directory.GetCurrentDirectory(), "UEProject.zip"), Directory.GetCurrentDirectory());
 
-                var newDir = Path.Combine(Directory.GetCurrentDirectory(), $"FNGameProj--Fortnite-Release-{ProjectVersion}");
+                var newDir = Path.Combine(Directory.GetCurrentDirectory(), $"FNGameProj--Fortnite-Release-{ProjectVersion}");   
                 if (ProjectName != null && Directory.Exists(newDir))
                     Directory.Move(newDir, Path.Combine(Directory.GetCurrentDirectory(), ProjectName));
 
@@ -44,7 +44,7 @@ namespace FortniteProjectCreator {
                         Path.Combine(Directory.GetCurrentDirectory(), "UEProject.zip"),
                         Path.Combine(
                             Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData),
-                            $"FortniteProjectCreator/FNGameProj--Fortnite-Release-{ProjectVersion}"));
+                            $"FortniteProjectCreator/FNGameProj--Fortnite-Release-{ProjectVersion}.zip"));
                 else
                     File.Delete(Path.Combine(Directory.GetCurrentDirectory(), "UEProject.zip"));
             }

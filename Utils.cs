@@ -22,7 +22,7 @@ namespace FortniteProjectCreator {
         }
 
         public static string GetBackedUpProjectFromVersion(string Version) {
-            return Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), $"FortniteProjectCreator/FNGameProj--Fortnite-Release-{Version}");
+            return Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), $"FortniteProjectCreator/FNGameProj--Fortnite-Release-{Version}.zip");
         }
 
         public static Dictionary<string, string> CheckForBackups() {
